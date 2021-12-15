@@ -1,6 +1,4 @@
 import FuzzySet.Universe
-import org.scalacheck.Prop.forAll
-import org.scalacheck.{Arbitrary, Gen, Properties}
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should
 
@@ -81,7 +79,8 @@ class FuzzySetSpecification extends AnyFlatSpec with should.Matchers {
   }
 
 }
-/*// https://github.com/typelevel/scalacheck/blob/main/doc/UserGuide.md
+// https://github.com/typelevel/scalacheck/blob/main/doc/UserGuide.md
+/*
 object FuzzySetSpecification extends Properties("FuzzySet") {
 
   import ArbitraryFuzzySet._
@@ -142,4 +141,5 @@ object ArbitraryFuzzySet {
         ArbitraryFuzzySet(fuzzySet, universe)
       }
     }
-}*/
+}
+*/
